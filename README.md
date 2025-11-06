@@ -302,7 +302,10 @@ Rezultatai:
   5.3. cmake [-DCMAKE_BUILD_TYPE=Release] .. <br>
   5.4. cmake --build . <br>
 6. Buvo sukurtas vykdomasis failas v1_0.exe. Belieka jį pavykdyti, į komandinę eilutę parašant v1_0.exe. <br>
-<br>**V1.1**<br>
+
+**V1.1**
+
+
 1. Studento klasė pakeista į Studento struktūrą.<br>
 2. Atlikta struktūrų, klasių bei kompiliatoriaus optimizavimo įtakos vykdomojo failo dydžiui bei programos spartai analizė.<br>
 Analizei vidurkis paimtas iš 3 bandymų. Fiksuotas buvo vektoriaus konteineris.
@@ -387,6 +390,10 @@ Rezultatai:
     </tr>
   </tbody>
 </table>
+**Išvados:**
+- Sąrašas veikia kiek sparčiau už klases beveik visais atvejais.
+- Pagal optimizavimo lygį O2 greičiausias.
+- Nors vydomojo failo dydis panašus, kiek mažesnis failas yra sąrašo tipo.
 
 
 
