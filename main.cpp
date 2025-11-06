@@ -2,7 +2,6 @@
 
 int main()
 {
-
     for (int i = 1'000; i <= 10'000'000; i *= 10)
     {
         vector<Studentas> Grupe = Failo_nuskaitymas("studentai" + to_string(i) + ".txt");
@@ -15,7 +14,7 @@ int main()
         pasiskirstymas_list_1(Grupelist, i);
         pasiskirstymas_list_2(Grupelist, i);
         pasiskirstymas_list_3(Grupelist, i);
-
+        
         cout << endl;
     }
 }
