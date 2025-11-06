@@ -361,7 +361,7 @@ Rezultatai:
 <br>
 
 <table>
-  <caption>Gautas failo dydis keičiant optimizavimo lygį</caption>
+  <caption>2. Gautas failo dydis keičiant optimizavimo lygį</caption>
     <thead>
     <tr>
       <th rowspan = '2'>Optimizavimo lygis</th>
@@ -390,7 +390,8 @@ Rezultatai:
     </tr>
   </tbody>
 </table>
-<br>
+
+
 **Išvados:**<br>
 - Sąrašas veikia kiek sparčiau už klases beveik visais atvejais.<br>
 - Pagal optimizavimo lygį O2 greičiausias.<br>
