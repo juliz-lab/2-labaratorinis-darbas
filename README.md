@@ -306,8 +306,7 @@ Rezultatai:
 **V1.1**<br>
 1. Studento klasė pakeista į Studento struktūrą.<br>
 2. Atlikta struktūrų, klasių bei kompiliatoriaus optimizavimo įtakos vykdomojo failo dydžiui bei programos spartai analizė.<br>
-<br>
-Vidurkis paimtas iš 3 bandymų. Fiksuotas buvo vektoriaus konteineris.
+Analizei vidurkis paimtas iš 3 bandymų. Fiksuotas buvo vektoriaus konteineris.
 Rezultatai:
 <table>
   <caption>1. Spartos palyginimas apibrėžtą tipą ir optimizavimo lygį<br></caption>
@@ -345,15 +344,16 @@ Rezultatai:
       <td>0,252</td>
       <td>0,179</td>
     </tr>
-      <tr>O2</tr>
-      <tr>0,050</tr>
-      <tr>0,170</tr>
+    <tr>
+      <td>O2</td>
+      <td>0,050</td>
+      <td>0,170</td>
     </tr>
+    <tr>
+      <td>O3</td>
+      <td>0,051</td>
+      <td>0,174</td>
     </tr>
-      <tr>O2</tr>
-      <tr>0,051</tr>
-      <tr>0,174</tr>
-</tr>
   </tbody>
 </table>
 
