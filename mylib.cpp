@@ -82,7 +82,6 @@ void pasiskirstymas_vector_2(vector<Studentas> Grupe, const int &irasu_sk)
     vector<Studentas> nemoksos;
     nemoksos.reserve(irasu_sk);
     size_t i = 0;
-
     for (size_t j = 0; j < Grupe.size(); ++j)
     {
         if (Grupe[j].galutinis() >= 5.0)
