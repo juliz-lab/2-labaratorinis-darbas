@@ -11,12 +11,11 @@ using std::istringstream;
 
 class Studentas
 {
-    string var_;
-    string pav_;
-    vector<int> paz_;
-    int egz_;
-    double gal_;
-
+        string var_;
+        string pav_;
+        vector<int> paz_;
+        int egz_;
+        double gal_;
     public:
         Studentas(): egz_(0) {}
         Studentas(istringstream& iss); 
@@ -25,6 +24,4 @@ class Studentas
         inline double galutinis() const {return gal_;}
         ~Studentas(){}
 };
-
-// stud.galutinis() ?
 #endif
