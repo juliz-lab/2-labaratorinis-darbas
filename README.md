@@ -390,10 +390,11 @@ Rezultatai:
     </tr>
   </tbody>
 </table>
-**Išvados:**
-- Sąrašas veikia kiek sparčiau už klases beveik visais atvejais.
-- Pagal optimizavimo lygį O2 greičiausias.
-- Nors vydomojo failo dydis panašus, kiek mažesnis failas yra sąrašo tipo.
+<br>
+**Išvados:**<br>
+- Sąrašas veikia kiek sparčiau už klases beveik visais atvejais.<br>
+- Pagal optimizavimo lygį O2 greičiausias.<br>
+- Nors vydomojo failo dydis panašus, kiek mažesnis failas yra sąrašo tipo.<br>
 
 
 
