@@ -12,5 +12,4 @@ Studentas::Studentas(istringstream& iss) {
     egz_ = paz_.back();
     paz_.pop_back();
     gal_ = double(suma) / double(paz_.size()) * 0.4 + 0.6 * egz_;
-    
 }
