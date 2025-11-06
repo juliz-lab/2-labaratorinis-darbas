@@ -302,3 +302,60 @@ Rezultatai:
   5.3. cmake [-DCMAKE_BUILD_TYPE=Release] .. <br>
   5.4. cmake --build . <br>
 6. Buvo sukurtas vykdomasis failas v1_0.exe. Belieka jį pavykdyti, į komandinę eilutę parašant v1_0.exe. <br>
+<br>
+**V1.1**<br>
+1. Studento klasė pakeista į Studento struktūrą.<br>
+2. Atlikta struktūrų, klasių bei kompiliatoriaus optimizavimo įtakos vykdomojo failo dydžiui bei programos spartai analizė.<br>
+<br>
+Vidurkis paimtas iš 3 bandymų. Fiksuotas buvo vektoriaus konteineris.
+Rezultatai:
+<table>
+  <caption>1. Spartos palyginimas apibrėžtą tipą ir optimizavimo lygį<br></caption>
+<thread>
+  <tr>
+    <th rowspan='2'>Įrašų skaičius</th>
+    <th rowspan='2'>Optimizavimo lygis</th>
+    <th colspan='2'>Vidurkis</th>
+  </tr>
+  <tr>
+    <th>STRUCT</th>
+    <th>CLASS</th>
+  </tr>
+</thread>
+  <tbody>
+    <tr>
+      <td rowspan = '3'>100000</td>
+      <td>O1</td>
+      <td>0,019</td>
+      <td>0,024</td>
+    </tr>
+    <tr>
+      <td>O2</td>
+      <td>0,005</td>
+      <td>0,021</td>
+    </tr>
+    <tr>
+      <td>O3</td>
+      <td>0,005</td>
+      <td>0,023</td>
+    </tr>
+    <tr>
+      <td rowspan = '3'>1000000</td>
+      <td>O1</td>
+      <td>0,252</td>
+      <td>0,179</td>
+    </tr>
+      <tr>O2</tr>
+      <tr>0,050</tr>
+      <tr>0,170</tr>
+    </tr>
+    </tr>
+      <tr>O2</tr>
+      <tr>0,051</tr>
+      <tr>0,174</tr>
+</tr>
+  </tbody>
+</table>
+
+
+
