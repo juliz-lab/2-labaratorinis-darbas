@@ -302,8 +302,7 @@ Rezultatai:
   5.3. cmake [-DCMAKE_BUILD_TYPE=Release] .. <br>
   5.4. cmake --build . <br>
 6. Buvo sukurtas vykdomasis failas v1_0.exe. Belieka jį pavykdyti, į komandinę eilutę parašant v1_0.exe. <br>
-<br>
-**V1.1**<br>
+<br>**V1.1**<br>
 1. Studento klasė pakeista į Studento struktūrą.<br>
 2. Atlikta struktūrų, klasių bei kompiliatoriaus optimizavimo įtakos vykdomojo failo dydžiui bei programos spartai analizė.<br>
 Analizei vidurkis paimtas iš 3 bandymų. Fiksuotas buvo vektoriaus konteineris.
@@ -356,6 +355,39 @@ Rezultatai:
     </tr>
   </tbody>
 </table>
+<br>
+
+<table>
+  <caption>Gautas failo dydis keičiant optimizavimo lygį</caption>
+    <thead>
+    <tr>
+      <th rowspan = '2'>Optimizavimo lygis</th>
+      <th colspan = '2'>Vykdomojo failo dydis</th>
+    </tr>
+    <tr>
+      <th>STRUCT</th>
+      <th>CLASS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>O1</td>
+      <td>124</td>
+      <td><b>127</b></td>
+    </tr>
+    <tr>
+      <td>O2</td>
+      <td>122</td>
+      <td><b>122</b></td>
+    </tr>
+    <tr>
+      <td>O3</td>
+      <td>124</td>
+      <td><b>122</b></td>
+    </tr>
+  </tbody>
+</table>
+
 
 
 
