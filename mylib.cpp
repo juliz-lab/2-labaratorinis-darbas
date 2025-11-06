@@ -1,5 +1,6 @@
 #include "mylib.h"
 #include "timer.h"
+#include "Studentas.h"
 
 vector<Studentas> Failo_nuskaitymas(const string &failas)
 {
@@ -21,20 +22,8 @@ vector<Studentas> Failo_nuskaitymas(const string &failas)
     getline(buffer, eil);
     while (getline(buffer, eil))
     {
-        Studentas stud;
-        int paz, suma = 0;
-        istringstream iss(eil); // paverčiame eilutę į objektą.
-        iss >> stud.var >> stud.pav;
-        while (iss >> paz)
-        {
-            stud.paz.push_back(paz);
-            suma += paz;
-        }
-        suma -= paz;
-        stud.egz = stud.paz.back();
-        stud.paz.pop_back();
-        stud.gal = double(suma) / double(stud.paz.size()) * 0.4 + 0.6 * stud.egz;
-        // stud.med = double(Mediana(stud)) * 0.4 + 0.6 * stud.egz;
+        istringstream iss(eil); // eilute paverciam i duomenu srauta, pav iss
+        Studentas stud(iss);
         Grupe.push_back(stud);
     }
     return Grupe;
@@ -49,7 +38,7 @@ void pasiskirstymas_vector_1(const vector<Studentas> &Grupe, const int &irasu_sk
 
     for (auto &stud : Grupe)
     {
-        if (stud.gal >= 5.0)
+        if (stud.galutinis() >= 5.0)
         {
             moksliukai.push_back(stud);
         }
@@ -71,7 +60,7 @@ void pasiskirstymas_list_1(const list<Studentas> &Grupe, const int &irasu_sk)
     list<Studentas> moksliukai, nemoksos;
     for (auto &stud : Grupe)
     {
-        if (stud.gal >= 5.0)
+        if (stud.galutinis() >= 5.0)
         {
             moksliukai.push_back(stud);
         }
@@ -96,7 +85,7 @@ void pasiskirstymas_vector_2(vector<Studentas> Grupe, const int &irasu_sk)
 
     for (size_t j = 0; j < Grupe.size(); ++j)
     {
-        if (Grupe[j].gal >= 5.0)
+        if (Grupe[j].galutinis() >= 5.0)
         {
             Grupe[i] = move(Grupe[j]);
             i++;
@@ -120,7 +109,7 @@ void pasiskirstymas_list_2(list<Studentas> Grupe, const int &irasu_sk)
     list<Studentas> nemoksos;
     for (auto it = Grupe.begin(); it != Grupe.end();)
     {
-        if (it->gal < 5.0)
+        if (it->galutinis() < 5.0)
         {
             nemoksos.push_back(*it);
             it = Grupe.erase(it);
@@ -145,7 +134,7 @@ void pasiskirstymas_vector_3(vector<Studentas> &Grupe, const int &irasu_sk)
 
     auto it = partition(Grupe.begin(), Grupe.end(),
                         [](const Studentas &s)
-                        { return s.gal >= 5.0; });
+                        { return s.galutinis() >= 5.0; });
     nemoksos.assign(it, Grupe.end());
     Grupe.erase(it, Grupe.end());
 
@@ -162,7 +151,7 @@ void pasiskirstymas_list_3(list<Studentas> &Grupe, const int &irasu_sk)
     list<Studentas> nemoksos;
     Grupe.remove_if([&nemoksos](const Studentas &s)
                     {
-                        if (s.gal < 5.0)
+                        if (s.galutinis() < 5.0)
                         {
                             nemoksos.push_back(s);
                             return true; // pasalins is grupes si studenta
