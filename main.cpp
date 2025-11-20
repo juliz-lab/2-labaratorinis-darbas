@@ -47,7 +47,7 @@ int main()
     }
     else if (p == '2')
     {
-        vector<Studentas> Grupe;
+        vector<Studentas> Grupe, nemoksos;
         cout << "Kiek studentu yra grupeje? ";
         int n;
         cin >> n;
@@ -55,12 +55,32 @@ int main()
         {
             Grupe.push_back(Stud_iv());
         }
-        ofstream out("rezultatas.txt");
+
+        size_t i = 0;
+        for (size_t j = 0; j < Grupe.size(); ++j)
+        {
+            if (Grupe[j].galutinis() >= 5.0)
+            {
+                Grupe[i] = move(Grupe[j]);
+                i++;
+            }
+            else
+            {
+                nemoksos.push_back(move(Grupe[j]));
+            }
+        }
+
+        Grupe.erase(Grupe.begin() + i, Grupe.end());
+        
+        spausdink_grupe(Grupe, "v");
+        spausdink_grupe(nemoksos, "v");
+
+        /*ofstream out("rezultatas.txt");
         out << "Vardas " << setw(15) << "Pavarde " << setw(10) << "Gal." << endl;
         for (auto &s : Grupe)
         {
             out << s.vardas() << setw(15) << s.pavarde() << setw(15) << s.galutinis() << endl;
-        }
+        }*/
 
         // JEIGU REIKIA PARODYTI, KAD KOPIJAVIMO KONSTRUKTORIUS IR KOPIJAVIMO PRISKYRIMO OPERATORIUS VEIKIA:
         /*Studentas a1 = Grupe[0];
