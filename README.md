@@ -4,7 +4,7 @@
 **Objektinis programavimas** <br>
 
 
-**V1.2**-------------------------------------------------------------------------------------------------------------------------------------------------------<br>
+**V1.2**-------------------------------------------------------------------------------------------------------------------------------------<br>
 
 1. Sugrąžinta ištrinta kodo dalis (įvedimas ranka, nuskaitymas iš failo).
 2. Išpildyta "Rule of three" taisyklė (sukurtas kopijavimo konstruktorius ir kopijavimo priskyrimo operatorius).<br>
@@ -35,7 +35,7 @@ Dabar išvedimo metu galime tiesiog atspausdinti studento objektą ir iškart pa
 
 
 
-**V1.1**------------------------------------------------------------------------------------------------------------------------------------------------------<br>
+**V1.1**-----------------------------------------------------------------------------------------------------------------------------<br>
 
 
 1. Studento klasė pakeista į Studento struktūrą.<br>
@@ -282,7 +282,7 @@ Rezultatai:
   5.4. cmake --build . <br>
 6. Buvo sukurtas vykdomasis failas v1_0.exe. Belieka jį pavykdyti, į komandinę eilutę parašant v1_0.exe. <br>
 
-**V0.3**------------------------------------------------------------------------------------------------------------------------------------------ <br>
+**V0.3**---------------------------------------------------------------------------------------------------------------------------- <br>
 1. Pridėtas objekto vietos atmintyje spausdinimas;
 2. Pridėta galimybė duomenis talpinti ir std::list struktūroje;
 3. Atlikta programos spartos analizė taikant std::vector ir std::list konteinerius. <br>
