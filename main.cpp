@@ -63,7 +63,7 @@ int main()
         }
 
         // JEIGU REIKIA PARODYTI, KAD KOPIJAVIMO KONSTRUKTORIUS IR KOPIJAVIMO PRISKYRIMO OPERATORIUS VEIKIA:
-        Studentas a1 = Grupe[0];
+        /*Studentas a1 = Grupe[0];
         cout << "Studento a1 vardu " << a1.vardas() << " galutinis pazymys " << a1.galutinis() << endl;
         Studentas a2 = a1;
         cout << "Studento a2 vardu " << a2.vardas() << " galutinis pazymys " << a2.galutinis() << endl;
@@ -72,7 +72,7 @@ int main()
         cin >> a3;
         cout << "Studentas a3: " << a3 << endl;
         a3 = a1;
-        cout << "Studento a3: " << a3 << endl;
+        cout << "Studento a3: " << a3 << endl;*/
     }
     else if (p == '3')
     {
