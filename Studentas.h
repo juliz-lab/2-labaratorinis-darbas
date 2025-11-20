@@ -21,7 +21,6 @@ class Studentas
 
 public:
     Studentas() : egz_(0) {} // random studentas
-    // seteriu truksta.
     Studentas(istringstream &iss);
     inline string vardas() const { return var_; }
     inline string pavarde() const { return pav_; }
