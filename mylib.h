@@ -10,6 +10,7 @@
 #include <list>
 #include <chrono>
 #include <iterator>
+
 #include "Studentas.h"
 
 using std::cin;
@@ -37,6 +38,8 @@ using std::uniform_int_distribution;
 using std::vector;
 using std::ws;
 
+void rusiuok_vect(vector<Studentas> &konteineris, char pagal);
+void spausdink_grupe(const vector <Studentas> &vekt, string tipas);
 void pasiskirstymas_vector_1(const vector<Studentas> &Grupe, const int &irasu_sk);
 void pasiskirstymas_list_1(const list<Studentas> &Grupe, const int &irasu_sk);
 void pasiskirstymas_vector_2(vector<Studentas> Grupe, const int &irasu_sk);
@@ -44,6 +47,8 @@ void pasiskirstymas_list_2(list<Studentas> Grupe, const int &irasu_sk);
 void pasiskirstymas_vector_3(vector<Studentas> &Grupe, const int &irasu_sk);
 void pasiskirstymas_list_3(list<Studentas> &Grupe, const int &irasu_sk);
 vector<Studentas> Failo_nuskaitymas(const string &failas);
+Studentas Stud_iv();
+double Mediana();
 
 template <typename Container>
 void Spausdink(const Container &moksliukai, const Container &nemoksos, const string &strategija, const string &konteineris)
