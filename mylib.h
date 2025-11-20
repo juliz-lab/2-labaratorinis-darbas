@@ -18,7 +18,7 @@ using std::cout;
 using std::endl;
 using std::fixed;
 using std::ifstream;
-using std::istringstream; // stringe esančių žodžių sk skaičiavimui
+using std::istringstream; 
 using std::left;
 using std::list;
 using std::map;
