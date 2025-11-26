@@ -3,8 +3,13 @@
 **Duomenų mokslas** <br>
 **Objektinis programavimas** <br>
 
+**V1.5**---------------------------------------------------------------------------------------------------------------------------
 
-**V1.2**-------------------------------------------------------------------------------------------------------------------------------------<br>
+1. Sukurta bazinė klasė Zmogus ir išvesta išvestinė klasė Studentas.
+2. Sukurtas atskiras .h failas baziinei klasei.
+
+
+**V1.2**----------------------------------------------------------------------------------------------------------------------------<br>
 
 1. Sugrąžinta ištrinta kodo dalis (įvedimas ranka, nuskaitymas iš failo).
 2. Išpildyta "Rule of three" taisyklė (sukurtas kopijavimo konstruktorius ir kopijavimo priskyrimo operatorius).<br>
