@@ -3,7 +3,7 @@
 #include <vector>
 #include <cmath>
 #include <algorithm>
-#include <random> //atsitiktiniam skaiciui rasti
+#include <random> 
 #include <fstream>
 #include <chrono>
 #include <map>
@@ -11,6 +11,7 @@
 #include <chrono>
 #include <iterator>
 
+#include "Zmogus.h"
 #include "Studentas.h"
 
 using std::cin;
@@ -18,7 +19,7 @@ using std::cout;
 using std::endl;
 using std::fixed;
 using std::ifstream;
-using std::istringstream; 
+using std::istringstream; // stringe esančių žodžių sk skaičiavimui
 using std::left;
 using std::list;
 using std::map;
