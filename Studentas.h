@@ -5,62 +5,122 @@
 #include <vector>
 #include <sstream>
 #include <algorithm>
+#include <iostream>
 
+using std::istream;
 using std::istringstream;
+using std::ostream;
 using std::sort;
 using std::string;
 using std::vector;
 
-class Studentas
+class Zmogus
 {
+protected:
     string var_;
     string pav_;
+
+public:
+    virtual void SpausdintiInfo() const = 0;
+
+    inline string vardas() const { return var_; }
+    inline string pavarde() const { return pav_; }
+
+    void setVardas(const string &v) { var_ = v; }
+    void setPavarde(const string &p) { pav_ = p; }
+
+    Zmogus() = default;
+
+    virtual ~Zmogus()
+    {
+        var_.clear();
+        pav_.clear();
+    }
+    Zmogus(const Zmogus &senas)
+    {
+        pav_ = senas.pav_;
+        var_ = senas.var_;
+    }
+    Zmogus &operator=(const Zmogus &senas)
+    {
+        pav_ = senas.pav_;
+        var_ = senas.var_;
+
+        return *this;
+    }
+};
+
+class Studentas : public Zmogus
+{
+private:
     vector<int> paz_;
     int egz_;
     double gal_, med_;
 
 public:
-    Studentas() : egz_(0) {} // random studentas
+    Studentas() : Zmogus(), egz_(0) {}
     Studentas(istringstream &iss);
-    inline string vardas() const { return var_; }
-    inline string pavarde() const { return pav_; }
+
+    void SpausdintiInfo() const
+    {
+        std::cout << "Studentas :" << var_ << " " << pav_ << ", Egz.: " << egz_ << std::endl;
+    }
+
+    double Mediana();
+    inline int egazaminas() const { return egz_; }
     inline double galutinis() const { return gal_; }
     inline double galutinisMed() const { return med_; }
-    double Mediana();
-    void setVardas(string &v) { var_ = v; }
-    void setPavarde(string &p) { pav_ = p; }
+
     void setPaz(vector<int> &p) { paz_ = p; }
     void setEgz(int &e) { egz_ = e; }
     void setGal(double &g) { gal_ = g; }
     void setMed(double &m) { med_ = m; }
+
     ~Studentas()
     {
-        var_.clear();
-        pav_.clear();
         paz_.clear();
         paz_.shrink_to_fit();
     }
-    Studentas(const Studentas &senas)
+
+    Studentas(const Studentas &senas) : Zmogus(senas)
     {
-        cout << "Iskviestas kopijavimo konstruktorius." << endl;
+
         egz_ = senas.egz_;
-        pav_ = senas.pav_;
-        var_ = senas.var_;
         paz_ = senas.paz_;
         med_ = senas.med_;
         gal_ = senas.gal_;
     }
+
     Studentas &operator=(const Studentas &senas)
     {
-        cout << "Iskviestas priskirimo operatorius." << endl;
+        Zmogus::operator=(senas);
         egz_ = senas.egz_;
-        pav_ = senas.pav_;
-        var_ = senas.var_;
         paz_ = senas.paz_;
         med_ = senas.med_;
         gal_ = senas.gal_;
 
         return *this;
+    }
+
+    friend ostream &operator<<(ostream &out, const Studentas &stud)
+    {
+        out << "Vardas: " << stud.var_ << ", pavarde: " << stud.pav_ << ", egzamino pazymys: " << stud.egz_ << std::endl;
+        return out;
+    }
+    friend istream &operator>>(istream &in, Studentas &stud)
+    {
+        std::cout << "Iveskite studento varda, pavarde, pazymius (paskutini iveskite 0) ir egzamino pazymi." << std::endl;
+        in >> stud.var_ >> stud.pav_;
+        int temp;
+        while (true)
+        {
+            in >> temp;
+            stud.paz_.push_back(temp);
+            if (temp == 0)
+                break;
+        }
+        in >> stud.egz_;
+        return in;
     }
 };
 
