@@ -1,6 +1,13 @@
 #ifndef STUDENTAS_H // jei nedeklaruotas
 #define STUDENTAS_H // tai deklaruok
 
+/**
+ * @file Studentas.h
+ * Čia apibrėžta išvestinė klasė Studentas.
+ * 
+ * Čia saugomi studento pažymiai ir egzamino rezultatas.
+ */
+
 #include "Zmogus.h"
 
 #include <string>
@@ -15,18 +22,34 @@ using std::ostream;
 using std::sort;
 using std::string;
 using std::vector;
-
+/** 
+* @class Studentas
+ * @brief Išvestinė klasė iš Zmogus, apibrėžianti studento savybes.
+ *
+ * Klasėje saugomi studento pažymiai ir egzamino rezultatas. Realizuota 
+ * SpausdintiInfo() funkcija ir operatoriai.
+ */
 class Studentas : public Zmogus
 {
 private:
-    vector<int> paz_;
-    int egz_;
-    double gal_, med_;
+    vector<int> paz_; ///< Studento pažymiai
+    int egz_; ///< Studento egzamino rezultatas 
+    double gal_, med_; ///< Studento galutinis pažymys imant vidurkį ir medianą.
 
 public:
+
+    /// @brief Priskiriamos bendros savybės žmogui ir egzamino rezultatas išsaugomas kaip 0.
     Studentas() : Zmogus(), egz_(0) {}
+
+    /**
+     * @brief Konstruktorius, nuskaitantis studento duomenis iš istringstream.
+     * @param iss Duomenų srautas su vieno studento informacija.
+     */
     Studentas(istringstream &iss);
 
+    /**
+     * @brief Spausdinamas studentas.
+     */
     void SpausdintiInfo() const
     {
         std::cout << "Studentas :" << var_ << " " << pav_ << ", Egz.: " << egz_ << std::endl;
