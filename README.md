@@ -49,7 +49,7 @@ Analizei vidurkis paimtas iš 3 bandymų. Fiksuotas buvo vektoriaus konteineris.
 Rezultatai:
 <table>
   <caption>1. Spartos palyginimas apibrėžtą tipą ir optimizavimo lygį<br></caption>
-<thread>
+<thead>
   <tr>
     <th rowspan='2'>Įrašų skaičius</th>
     <th rowspan='2'>Optimizavimo lygis</th>
@@ -59,7 +59,7 @@ Rezultatai:
     <th>STRUCT</th>
     <th>CLASS</th>
   </tr>
-</thread>
+</thead>
   <tbody>
     <tr>
       <td rowspan = '3'>100000</td>
@@ -143,13 +143,13 @@ Atlikta studentų rūšiavimo į dvi skirtingas grupes pagal galutinį pažymį 
 Rezultatai: 
 <table>
   <caption><b>1 STRATEGIJA</caption>
-    <thread>
+    <thead>
       <tr>
         <th>Irašų skaičius</th>
         <th>VEKTORIUS</th>
         <th>SĄRAŠAS</th>
       </tr>
-    </thread>
+    </thead>
       <tbody>
         <tr>
           <td>1000</td>
@@ -179,19 +179,19 @@ Rezultatai:
       </tbody>
   </b>
       </tbody>
-      </thread>
+      </thead>
 </table>
 
 
 <table>
   <caption><b>2 STRATEGIJA</caption>
-    <thread>
+    <thead>
       <tr>
         <th>Irašų skaičius</th>
         <th>VEKTORIUS</th>
         <th>SĄRAŠAS</th>
       </tr>
-    </thread>
+    </thead>
       <tbody>
         <tr>
           <td>1000</td>
@@ -221,19 +221,19 @@ Rezultatai:
       </tbody>
   </b>
       </tbody>
-      </thread>
+      </thead>
 </table>
 
 
 <table>
   <caption><b>3 STRATEGIJA</caption>
-    <thread>
+    <thead>
       <tr>
         <th>Irašų skaičius</th>
         <th>VEKTORIUS</th>
         <th>SĄRAŠAS</th>
       </tr>
-    </thread>
+    </thead>
       <tbody>
         <tr>
           <td>1000</td>
@@ -263,7 +263,7 @@ Rezultatai:
       </tbody>
   </b>
       </tbody>
-      </thread>
+      </thead>
 </table>
 
 
@@ -297,13 +297,13 @@ Analizės apžvalga. Matuoti trys programos etapai: studentų surūšiavimas į 
 Rezultatai:
 <table>
   <caption><b>Surūšiavimas į dvi grupes:</b></caption>
-    <thread>
+    <thead>
       <tr>
         <th>Įrašų skaičius</th>
         <th>Vektoriaus vid.</th>
         <th>Sąrašo vid.</th>
       </tr>
-    </thread>
+    </thead>
     <tbody>
       <tr>
         <td>1000</td>
@@ -335,13 +335,13 @@ Rezultatai:
 
 <table>
   <caption><b>Išrikiavimas:</caption>
-    <thread>
+    <thead>
       <tr>
         <th>Įrašų skaičius</th>
         <th>Vektoriaus vid.</th>
         <th>Sąrašo vid.</th>
       </tr>
-    </thread>
+    </thead>
     <tbody>
       <tr>
         <td>1000</td>
@@ -373,13 +373,13 @@ Rezultatai:
 
 <table>
   <caption><b>Įrašymas į failus:</caption>
-    <thread>
+    <thead>
       <tr>
         <th>Įrašų skaičius</th>
         <th>Vektoriaus vid.</th>
         <th>Sąrašo vid.</th>
       </tr>
-    </thread>
+    </thead>
     <tbody>
       <tr>
         <td>1000</td>
