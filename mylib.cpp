@@ -1,7 +1,10 @@
 #include "mylib.h"
 #include "timer.h"
 #include "Studentas.h"
-
+/**
+ * @file mylib.cpp
+ * Čia realizuotos viso apibrėžtos funkcijos.
+ */
 vector<Studentas> Failo_nuskaitymas(const string &failas)
 {
     ifstream fd(failas);
@@ -29,6 +32,19 @@ vector<Studentas> Failo_nuskaitymas(const string &failas)
     return Grupe;
 }
 
+ /**
+  * @brief Patikrina, ar įvestas pažymys yra tinkamas.
+  * 
+  * Funkcija patikrina ar įvestis tinka, jei reikia
+  * išvalo klaidos būseną, o tada tikrina ar įvestis
+  *  tarp 0 ir 10. 
+  * 
+  * @param laik_paz Įvestas pažymys, kurį tikrinam.
+  * 
+  * @return bool tipo reikšmė: 
+  * 'true' - jei teiginas (1-10);
+  * 'false' - jei įvestis neteisinga;
+  */
 bool paz_tikrinimas(int laik_paz)
 {
     if (cin.fail()) // naudojamas patikrinti ar inputas teisingas.
@@ -56,6 +72,7 @@ int atsitiktinis_sk()
     uniform_int_distribution<> dist(1, 10); // uztikrina, kad skaiciai butu butent nuo 1 iki 10.
     return dist(gen);
 }
+
 
 Studentas Stud_iv()
 {
@@ -247,6 +264,7 @@ void pasiskirstymas_vector_1(const vector<Studentas> &Grupe, const int &irasu_sk
     }
 }
 
+
 void pasiskirstymas_list_1(const list<Studentas> &Grupe, const int &irasu_sk)
 {
     Timer t;
@@ -268,6 +286,7 @@ void pasiskirstymas_list_1(const list<Studentas> &Grupe, const int &irasu_sk)
         Spausdink(moksliukai, nemoksos, "1", "list");
     }
 }
+
 
 void pasiskirstymas_vector_2(vector<Studentas> Grupe, const int &irasu_sk)
 {
@@ -295,6 +314,7 @@ void pasiskirstymas_vector_2(vector<Studentas> Grupe, const int &irasu_sk)
         Spausdink(Grupe, nemoksos, "2", "vector");
     }
 }
+
 
 void pasiskirstymas_list_2(list<Studentas> Grupe, const int &irasu_sk)
 {
