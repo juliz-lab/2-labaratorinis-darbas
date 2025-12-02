@@ -1,5 +1,8 @@
 #include "mylib.h"
-
+/**
+ * @file main.cpp
+ * Čia vyksta bendravimas su naudotoju. 
+ */
 int main()
 {
     char p;
