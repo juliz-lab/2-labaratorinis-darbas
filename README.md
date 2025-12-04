@@ -3,6 +3,24 @@
 **Duomenų mokslas** <br>
 **Objektinis programavimas** <br>
 
+**V2.0**---------------------------------------------------------------------------------------------------------------------------
+
+1. Sukurta dokumentacija naudojant Doxygen. <br>
+2. Realizuoti Unit testai. Rinkausi Dogtest metodą, nes jis paprasčiausiai įgyvendinamas ir tinkamiausias mūsų nedidelei programai. Buvo sukurti 3 testai, kurie patikrina Studento klasę. Žemiau trumpai aprašysiu kiekvieną iš jų.<br>
+   A) Tikriname set ir get metodus.<br>
+   <img width="413" height="168" alt="image" src="https://github.com/user-attachments/assets/943b0e1e-60b4-499d-bd0e-b04e26e03db4" /> <br>
+   B) Tikrinama iš anksto numatyta reikšmė. <br>
+   <img width="421" height="165" alt="image" src="https://github.com/user-attachments/assets/4eb4e76e-7ecb-4959-92a8-49a71c11757d" /> <br>
+   C) Tikrinamas kopijavimo konstruktorius. <br>
+   <img width="507" height="203" alt="image" src="https://github.com/user-attachments/assets/149eb6f7-f5f0-4df3-9b85-a9ddac410cce" /> <br>
+   Visus testus suvykdžius gaunamas patvirtinimas, kad viskas suveikė: <br>
+   <img width="960" height="91" alt="image" src="https://github.com/user-attachments/assets/145b5308-487c-49b7-b239-184e79820bd1" />
+
+   
+
+
+
+
 **V1.5**---------------------------------------------------------------------------------------------------------------------------
 
 1. Sukurta bazinė klasė Zmogus ir išvesta išvestinė klasė Studentas.
