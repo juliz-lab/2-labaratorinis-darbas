@@ -14,7 +14,8 @@
    C) Tikrinamas kopijavimo konstruktorius. <br>
    <img width="507" height="203" alt="image" src="https://github.com/user-attachments/assets/149eb6f7-f5f0-4df3-9b85-a9ddac410cce" /> <br>
    Visus testus suvykdžius gaunamas patvirtinimas, kad viskas suveikė: <br>
-   <img width="960" height="91" alt="image" src="https://github.com/user-attachments/assets/145b5308-487c-49b7-b239-184e79820bd1" />
+   <img width="960" height="91" alt="image" src="https://github.com/user-attachments/assets/145b5308-487c-49b7-b239-184e79820bd1" /> <br>
+<br>
 
    
 
