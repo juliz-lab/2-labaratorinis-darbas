@@ -29,6 +29,7 @@
   5.4. cmake --build . <br>
 6. Buvo sukurtas vykdomasis failas v2_0.exe. Belieka jį pavykdyti, į komandinę eilutę parašant v2_0.exe. <br>
    <br>
+   Nuoroda į overleaf puslapį (pdf) https://www.overleaf.com/project/693294646036719df0cce4bd.
 
 
 
