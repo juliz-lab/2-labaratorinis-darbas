@@ -1,0 +1,527 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="lt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Studentu rezultatu skaiciavimo sistema: Studentu rezultatu skaiciavimo sistema</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Studentu rezultatu skaiciavimo sistema<span id="projectnumber">&#160;v2.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Sugeneruota Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Paieška',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('index.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Studentu rezultatu skaiciavimo sistema </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="md__r_e_a_d_m_e"></a> <b>Julija Kučinskaitė</b> <br  />
+ <b>Vilniaus universitetas</b> <br  />
+ <b>Duomenų mokslas</b> <br  />
+ <b>Objektinis programavimas</b> <br  />
+</p>
+<p><b>V1.5</b>------------------------------------------------------------------------------------------------------------------------&mdash;</p>
+<ol type="1">
+<li>Sukurta bazinė klasė Zmogus ir išvesta išvestinė klasė Studentas.</li>
+<li>Sukurtas atskiras .h failas baziinei klasei.</li>
+</ol>
+<p><b>V1.2</b>-------------------------------------------------------------------------------------------------------------------------&mdash;<br  />
+</p>
+<ol type="1">
+<li>Sugrąžinta ištrinta kodo dalis (įvedimas ranka, nuskaitymas iš failo).</li>
+<li>Išpildyta "Rule of three" taisyklė (sukurtas kopijavimo konstruktorius ir kopijavimo priskyrimo operatorius).<br  />
+</li>
+<li>Mano klasei Studentas pritaikyti išvesties &lt;&lt; ir įvesties &gt;&gt; operatoriai.<br  />
+</li>
+</ol>
+<p><b>Operatoriai</b><br  />
+</p>
+<ol type="1">
+<li>Įvesties operatorius <b>&gt;&gt;</b> <br  />
+</li>
+</ol>
+<p>Nuotraukoje galima matyti Studento klasėje aprašytą draugišką (friend) funkciją įvedimo operatoriui &gt;&gt; :</p>
+<p><img src="https://github.com/user-attachments/assets/8d70ab91-ed11-4655-ab4f-65d0417d7476" alt="image" width="1144" height="357" class="inline"/> <br  />
+ Dabar galima įvesti studentą patogiai, viena eilute ir programa supras, kokie domenys pateikiami:</p>
+<p><img src="https://github.com/user-attachments/assets/f70e379e-0366-496f-9bb5-164f478edded" alt="image" width="776" height="39" class="inline"/><br  />
+</p>
+<ol type="1">
+<li>Išvesties operatorius **&lt;&lt;** <br  />
+</li>
+</ol>
+<p>Nuotraukoje galima matyti Studento klasėje aprašytą draugišką funkciją išvedimo operatoriui &lt;&lt; :</p>
+<p><img src="https://github.com/user-attachments/assets/893974b2-67fd-407f-8061-501c163e8396" alt="image" width="1141" height="125" class="inline"/> <br  />
+ Dabar išvedimo metu galime tiesiog atspausdinti studento objektą ir iškart patogiai gausime jo vardą, pavardę ir egzamino pažymį. <br  />
+</p>
+<p><img src="https://github.com/user-attachments/assets/f624b99e-2682-4d04-addd-988452ebca54" alt="image" width="498" height="75" class="inline"/><br  />
+</p>
+<p><b>V1.1</b>--------------------------------------------------------------------------------------------------------------------------&mdash;<br  />
+</p>
+<ol type="1">
+<li>Studento klasė pakeista į Studento struktūrą.<br  />
+</li>
+<li>Atlikta struktūrų, klasių bei kompiliatoriaus optimizavimo įtakos vykdomojo failo dydžiui bei programos spartai analizė.<br  />
+ Analizei vidurkis paimtas iš 3 bandymų. Fiksuotas buvo vektoriaus konteineris. Rezultatai: <table class="doxtable">
+<caption>1. Spartos palyginimas apibrėžtą tipą ir optimizavimo lygį</caption>
+<tr>
+<th rowspan="2">Įrašų skaičius</th><th rowspan="2">Optimizavimo lygis</th><th colspan="2">Vidurkis</th></tr>
+<tr>
+<th>STRUCT</th><th>CLASS</th></tr>
+</table>
+</li>
+</ol>
+<p>100000</p>
+<p>O1</p>
+<p>0,019</p>
+<p>0,024</p>
+<p>O2</p>
+<p>0,005</p>
+<p>0,021</p>
+<p>O3</p>
+<p>0,005</p>
+<p>0,023</p>
+<p>1000000</p>
+<p>O1</p>
+<p>0,252</p>
+<p>0,179</p>
+<p>O2</p>
+<p>0,050</p>
+<p>0,170</p>
+<p>O3</p>
+<p>0,051</p>
+<p>0,174</p>
+<p><br  />
+</p>
+<table class="doxtable">
+<caption>2. Gautas failo dydis keičiant optimizavimo lygį</caption>
+<tr>
+<th rowspan="2">Optimizavimo lygis</th><th colspan="2">Vykdomojo failo dydis</th></tr>
+<tr>
+<th>STRUCT</th><th>CLASS</th></tr>
+</table>
+<p>O1</p>
+<p>124</p>
+<p><b>127</b></p>
+<p>O2</p>
+<p>122</p>
+<p><b>122</b></p>
+<p>O3</p>
+<p>124</p>
+<p><b>122</b></p>
+<p><b>Išvados:</b><br  />
+</p><ul>
+<li>Sąrašas veikia kiek sparčiau už klases beveik visais atvejais.<br  />
+</li>
+<li>Pagal optimizavimo lygį O2 greičiausias.<br  />
+</li>
+<li>Nors vydomojo failo dydis panašus, kiek mažesnis failas yra sąrašo tipo.<br  />
+</li>
+</ul>
+<p><b>V1.0</b>------------------------------------------------------------------------------------------------------------&mdash; <br  />
+ Atlikta studentų rūšiavimo į dvi skirtingas grupes pagal galutinį pažymį spartos analizė pagal 3 strategijas: 1) Ankstesniose versijose taikytas metodas - skaidyti studentus į nemoksas į moksliukus tiesiog iteruojant per Grupę ir išrūšiuojant juos į atitinkamus konteinerius. 2) Iteruojam Grupes elementus (studentus) ir tikrinam jų galutinį pažymį. Neišlaikiusius išsaugome naujame konteineryje "nemoksos" ir ištriname juos iš Grupes, todėl Grupeje lieka tik "moksliukai". Čia jokie <span class="tt">&lt;algorithm&gt;</span> metodai nepanaudoti, sužaista su move() ir erase() funkcijom. 3) Panaudojamos &lt;algorithm&gt; bibliotekos funkcijos partition() ir remove_if(), kurios leidžia efektyviai suskirstyti studentus į grupes pagal pažymį.</p>
+<p>Rezultatai: </p><table class="doxtable">
+<caption><b>1 STRATEGIJA</b></caption>
+<tr>
+<th><b>Irašų skaičius</b></th><th><b>VEKTORIUS</b></th><th><b>SĄRAŠAS</b></th></tr>
+</table>
+<p><b> </b></p>
+<p><b>1000</b></p>
+<p><b> </b></p>
+<p><b>0.0002</b></p>
+<p><b> </b></p>
+<p><b>0.0003</b></p>
+<p><b> </b></p>
+<p><b> </b></p>
+<p><b> </b></p>
+<p><b>10000</b></p>
+<p><b> </b></p>
+<p><b>0.0008</b></p>
+<p><b> </b></p>
+<p><b>0.0016</b></p>
+<p><b> </b></p>
+<p><b> </b></p>
+<p><b> </b></p>
+<p><b>100000</b></p>
+<p><b> </b></p>
+<p><b>0.0074</b></p>
+<p><b> </b></p>
+<p><b>0.0166</b></p>
+<p><b> </b></p>
+<p><b> </b></p>
+<p><b> </b></p>
+<p><b>1000000</b></p>
+<p><b> </b></p>
+<p><b>0.0761</b></p>
+<p><b> </b></p>
+<p><b>0.1643</b></p>
+<p><b> </b></p>
+<p><b> </b></p>
+<p><b> </b></p>
+<p><b>10000000</b></p>
+<p><b> </b></p>
+<p><b>3.2367</b></p>
+<p><b> </b></p>
+<p><b>5.8738</b></p>
+<p><b> </b></p>
+<p><b>  </b>   </p>
+<table class="doxtable">
+<caption><b>2 STRATEGIJA</b></caption>
+<tr>
+<th><b>Irašų skaičius</b></th><th><b>VEKTORIUS</b></th><th><b>SĄRAŠAS</b></th></tr>
+</table>
+<p><b> </b></p>
+<p><b>1000</b></p>
+<p><b> </b></p>
+<p><b>0.0001</b></p>
+<p><b> </b></p>
+<p><b>0.0001</b></p>
+<p><b> </b></p>
+<p><b> </b></p>
+<p><b> </b></p>
+<p><b>10000</b></p>
+<p><b> </b></p>
+<p><b>0.0004</b></p>
+<p><b> </b></p>
+<p><b>0.0007</b></p>
+<p><b> </b></p>
+<p><b> </b></p>
+<p><b> </b></p>
+<p><b>100000</b></p>
+<p><b> </b></p>
+<p><b>0.00029</b></p>
+<p><b> </b></p>
+<p><b>0.0008</b></p>
+<p><b> </b></p>
+<p><b> </b></p>
+<p><b> </b></p>
+<p><b>1000000</b></p>
+<p><b> </b></p>
+<p><b>0.0322</b></p>
+<p><b> </b></p>
+<p><b>0.0837</b></p>
+<p><b> </b></p>
+<p><b> </b></p>
+<p><b> </b></p>
+<p><b>10000000</b></p>
+<p><b> </b></p>
+<p><b>0.5013</b></p>
+<p><b> </b></p>
+<p><b>0.9885</b></p>
+<p><b> </b></p>
+<p><b>  </b>   </p>
+<table class="doxtable">
+<caption><b>3 STRATEGIJA</b></caption>
+<tr>
+<th><b>Irašų skaičius</b></th><th><b>VEKTORIUS</b></th><th><b>SĄRAŠAS</b></th></tr>
+</table>
+<p><b> </b></p>
+<p><b>1000</b></p>
+<p><b> </b></p>
+<p><b>0.0001</b></p>
+<p><b> </b></p>
+<p><b>0.0001</b></p>
+<p><b> </b></p>
+<p><b> </b></p>
+<p><b> </b></p>
+<p><b>10000</b></p>
+<p><b> </b></p>
+<p><b>0.0006</b></p>
+<p><b> </b></p>
+<p><b>0.0011</b></p>
+<p><b> </b></p>
+<p><b> </b></p>
+<p><b> </b></p>
+<p><b>100000</b></p>
+<p><b> </b></p>
+<p><b>0.0074</b></p>
+<p><b> </b></p>
+<p><b>0.0137</b></p>
+<p><b> </b></p>
+<p><b> </b></p>
+<p><b> </b></p>
+<p><b>1000000</b></p>
+<p><b> </b></p>
+<p><b>0.0727</b></p>
+<p><b> </b></p>
+<p><b>0.1341</b></p>
+<p><b> </b></p>
+<p><b> </b></p>
+<p><b> </b></p>
+<p><b>10000000</b></p>
+<p><b> </b></p>
+<p><b>1.0301</b></p>
+<p><b> </b></p>
+<p><b>1.7417</b></p>
+<p><b> </b></p>
+<p><b>  </b>   </p>
+<p><b>Išvados:</b> <br  />
+</p><ul>
+<li>2 strategija su dideliais failais (įskaitant 10 mln) tiek su vektoriu tiek su sąrašu veikia stulbinamai greitai. <br  />
+</li>
+<li>Vektorius yra geresnis pasirinkimas duomenų saugojimui, nes praktiškais visais atvejais veikia greičiau už sąrašą. <br  />
+</li>
+<li>Su mažais duomenų kiekiais (1000-10000 įrašais) paprastesnė 1 strategija veikia kiek greičiau už kitas. <br  />
+</li>
+<li>3 strategijai praktiškai neturi įtakos konteinerio tipo pasirinkimas. <br  />
+ <br  />
+ <b>Naudojimosi instrukcija</b> <br  />
+</li>
+</ul>
+<ol type="1">
+<li>Įsitikinkite, kad savo kompiuteryje turite įdiegtus C++ kompiliatorių bei projekto generavimo įrankius cmake, jei ne – įsidiekite. <br  />
+<ul>
+<li>Komandinėje eilutėje parašykite g++ &ndash;version, cmake &ndash;version. <br  />
+</li>
+</ul>
+</li>
+<li>Parsisiųskite failus main.cpp, mylib.cpp, mylib.h, timer.h ir CMakeLists.txt. <br  />
+</li>
+<li>Sukurkite aplanką, kuriame bus vykdomas kodo paleidimas. Į jį įkelkite parsisiųstą failą CMakeLists.txt ir sukurkite aplankus „src“ bei „include“. <br  />
+</li>
+<li>Į aplanką „src“ perkelkite visus parsisiųstus projekto .cpp failus, į aplanką „include“ – visus projekto .h failus. <br  />
+</li>
+<li>Per komandinę eilutę nueikite iki savo aplankalo, kuriame paruošti failai programos paleidimui. Tuomet komandinėje eilutėje parašykite šias komandas: <br  />
+ 5.1. mkdir build <br  />
+ 5.2. cd build <br  />
+ 5.3. cmake [-DCMAKE_BUILD_TYPE=Release] .. <br  />
+ 5.4. cmake &ndash;build . <br  />
+</li>
+<li>Buvo sukurtas vykdomasis failas v1_0.exe. Belieka jį pavykdyti, į komandinę eilutę parašant v1_0.exe. <br  />
+</li>
+</ol>
+<p><b>V0.3</b>-------------------------------------------------------------------------------------------------------------------------&mdash; <br  />
+</p><ol type="1">
+<li>Pridėtas objekto vietos atmintyje spausdinimas;</li>
+<li>Pridėta galimybė duomenis talpinti ir std::list struktūroje;</li>
+<li>Atlikta programos spartos analizė taikant std::vector ir std::list konteinerius. <br  />
+</li>
+</ol>
+<p>Analizės apžvalga. Matuoti trys programos etapai: studentų surūšiavimas į moksliukus ir nemokšas, duomenų išrikiavimas pagal galutinį pažymį, rezultatų įrašymas į failus. Testai atlikti 3 kartus.</p>
+<p>Rezultatai: </p><table class="doxtable">
+<caption><b>Surūšiavimas į dvi grupes:</b></caption>
+<tr>
+<th>Įrašų skaičius</th><th>Vektoriaus vid.</th><th>Sąrašo vid.</th></tr>
+</table>
+<p>1000</p>
+<p>0,0004</p>
+<p>0,0007</p>
+<p>10000</p>
+<p>0,0026</p>
+<p>0,0039</p>
+<p>100000</p>
+<p>0,0311</p>
+<p>0,0448</p>
+<p>1000000</p>
+<p>0,3509</p>
+<p>0,3538</p>
+<p>10000000</p>
+<p>2,8381</p>
+<p>3,7053</p>
+<table class="doxtable">
+<caption><b>Išrikiavimas:</b></caption>
+<tr>
+<th><b>Įrašų skaičius</b></th><th><b>Vektoriaus vid.</b></th><th><b>Sąrašo vid.</b></th></tr>
+</table>
+<p><b> </b></p>
+<p><b>1000</b></p>
+<p><b> </b></p>
+<p><b>0,0006</b></p>
+<p><b> </b></p>
+<p><b>0,0005</b></p>
+<p><b> </b></p>
+<p><b> </b></p>
+<p><b> </b></p>
+<p><b>10000</b></p>
+<p><b> </b></p>
+<p><b>0,0029</b></p>
+<p><b> </b></p>
+<p><b>0,0044</b></p>
+<p><b> </b></p>
+<p><b> </b></p>
+<p><b> </b></p>
+<p><b>100000</b></p>
+<p><b> </b></p>
+<p><b>0,0538</b></p>
+<p><b> </b></p>
+<p><b>0,1112</b></p>
+<p><b> </b></p>
+<p><b> </b></p>
+<p><b> </b></p>
+<p><b>1000000</b></p>
+<p><b> </b></p>
+<p><b>0,6387</b></p>
+<p><b> </b></p>
+<p><b>1,0909</b></p>
+<p><b> </b></p>
+<p><b> </b></p>
+<p><b> </b></p>
+<p><b>10000000</b></p>
+<p><b> </b></p>
+<p><b>7,9140</b></p>
+<p><b> </b></p>
+<p><b>15,6038</b></p>
+<p><b> </b></p>
+<p><b>  </b></p>
+<p><b></b></p>
+<p><b></p><table class="doxtable">
+<caption><b>Įrašymas į failus:</b></caption>
+<tr>
+<th><b>Įrašų skaičius</b></th><th><b>Vektoriaus vid.</b></th><th><b>Sąrašo vid.</b></th></tr>
+</table>
+<p></b></p>
+<p><b><b> </b></b></p>
+<p><b><b>1000</b></b></p>
+<p><b><b> </b></b></p>
+<p><b><b>0,0182</b></b></p>
+<p><b><b> </b></b></p>
+<p><b><b>0,0218</b></b></p>
+<p><b><b> </b></b></p>
+<p><b><b> </b></b></p>
+<p><b><b> </b></b></p>
+<p><b><b>10000</b></b></p>
+<p><b><b> </b></b></p>
+<p><b><b>0,0461</b></b></p>
+<p><b><b> </b></b></p>
+<p><b><b>0,0610</b></b></p>
+<p><b><b> </b></b></p>
+<p><b><b> </b></b></p>
+<p><b><b> </b></b></p>
+<p><b><b>100000</b></b></p>
+<p><b><b> </b></b></p>
+<p><b><b>0,5138</b></b></p>
+<p><b><b> </b></b></p>
+<p><b><b>0,5286</b></b></p>
+<p><b><b> </b></b></p>
+<p><b><b> </b></b></p>
+<p><b><b> </b></b></p>
+<p><b><b>1000000</b></b></p>
+<p><b><b> </b></b></p>
+<p><b><b>4,8555</b></b></p>
+<p><b><b> </b></b></p>
+<p><b><b>4,9960</b></b></p>
+<p><b><b> </b></b></p>
+<p><b><b> </b></b></p>
+<p><b><b> </b></b></p>
+<p><b><b>10000000</b></b></p>
+<p><b><b> </b></b></p>
+<p><b><b>48,7652</b></b></p>
+<p><b><b> </b></b></p>
+<p><b><b>49,2713</b></b></p>
+<p><b><b> </b></b></p>
+<p><b><b>  </b></b></p>
+<p><b><b></b></b></p>
+<p><b><b><b>Išvados:</b></p><ul>
+<li>Surūšiavimas su visų dydžių duomenimis vektoriaus yra greitesnis nei sąrašo (list).</li>
+<li>Žymus išrikiavimo laiko skirtumas yra su 10 mln. duomenų. Vektorius yra vidutiniškai 7,7 sek. greitesnis.</li>
+<li>Įrašymo į failus laikas yra truputį greitesnis vektroriaus.</li>
+</ul>
+<p></b></b></p>
+<p><b><b>Kompiuterio, su kuriuo atlikta analizė, parametrai: 2.00 GHz procesorius, 8.00 GB RAM, SSD 477 GB.</b></b></p>
+<p><b><b><b>V0.2</b>---------------------------------------------------------------------------------------------&mdash; <br  />
+</p><ol type="1">
+<li>Sukurta studentų duomenų generavimo programa;</li>
+<li>Sukurta funkcija studentų išskaidymui į išlaikiusius ir neišlaikiusius;</li>
+<li>Pridėta galimybė vartotojui pasirinkti, pagal ką rikiuoti rezultatus;</li>
+<li>Funkcijos ir struktūros perkeltos į atskirus failus;</li>
+</ol>
+<p></b></b></p>
+<p><b><b><b>V0.1</b>--------------------------------------------------------------------------------------------&mdash; <br  />
+</p><ol type="1">
+<li>Funkcija galutiniam pažymiui skaičiuoti;</li>
+<li>Įvesta galimybė naudotojui pasirinkti medianos ar vidurkio įvertinimo skaičiavimą;</li>
+<li>Sukurta atskira funkcija įvesto pažymio tikrinimui;</li>
+<li>Sukurtas atsitiktinių pažymių generavimas;</li>
+<li>Sukurta galimybė nuskaityti duomenis iš .txt failo;</li>
+<li>Pridėta išvestis į vartotojo nurodomą failą;</li>
+<li>Pridėtas rezultatų rikiavimas pagal pavardę ir vardą. </li>
+</ol>
+<p></b></b></p>
+</div></div><!-- PageDoc -->
+<a href="doxygen_crawl.html"></a>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Sugeneruota <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>
