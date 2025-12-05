@@ -16,7 +16,18 @@
    Visus testus suvykdžius gaunamas patvirtinimas, kad viskas suveikė: <br>
    <img width="960" height="91" alt="image" src="https://github.com/user-attachments/assets/145b5308-487c-49b7-b239-184e79820bd1" /> <br>
 <br>
-
+**Naudojimosi instrukcija** <br>
+1. Įsitikinkite, kad savo kompiuteryje turite įdiegtus C++ kompiliatorių bei projekto generavimo įrankius cmake, jei ne – įsidiekite. <br>
+    * Komandinėje eilutėje parašykite g++ --version, cmake --version. <br>
+2. Parsisiųskite failus main.cpp, mylib.cpp, mylib.h, timer.h ir CMakeLists.txt. <br>
+3. Sukurkite aplanką, kuriame bus vykdomas kodo paleidimas. Į jį įkelkite parsisiųstą failą CMakeLists.txt ir sukurkite aplankus „src“ bei „include“. <br>
+4. Į aplanką „src“ perkelkite visus parsisiųstus projekto .cpp failus, į aplanką „include“ – visus projekto .h failus. <br>
+5. Per komandinę eilutę nueikite iki savo aplankalo, kuriame paruošti failai programos paleidimui. Tuomet komandinėje eilutėje parašykite šias komandas: <br>
+  5.1. mkdir build <br>
+  5.2. cd build <br>
+  5.3. cmake [-DCMAKE_BUILD_TYPE=Release] .. <br>
+  5.4. cmake --build . <br>
+6. Buvo sukurtas vykdomasis failas v2_0.exe. Belieka jį pavykdyti, į komandinę eilutę parašant v2_0.exe. <br>
    
 
 
