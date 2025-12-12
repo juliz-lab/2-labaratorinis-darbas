@@ -1,0 +1,28 @@
+#define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
+#include "doctest.h"
+#include "Studentas.h"
+
+TEST_CASE("Tikrinami set ir get metodai") {
+    Studentas s;
+    s.setVardas("Vardenis");
+    CHECK("Vardenis" == s.getVardas());
+    s.setPavarde("Pavardenis");
+    CHECK("Pavardenis" == s.getPavarde());
+}
+
+TEST_CASE("Tikrinama defaultine reiksme") {
+    Studentas s;
+    s.setVardas("Vardenis");
+    s.setPavarde("Pavardenis");
+
+    CHECK(0 == s.egzaminas());
+}
+
+TEST_CASE("Tikrinamas kopijavimo konstruktorius") {
+    Studentas s;
+    s.setVardas("Vardenis");
+    s.setPavarde("Pavardenis");
+    Studentas kopija;
+    kopija = s;
+    CHECK(kopija.getPavarde() == s.getPavarde());
+}
